@@ -2,7 +2,7 @@
 A custom fetch script to dsiplay some Raspberry related information and Docker stats
 
 Example:
-
+![Awesome Example Image](https://github.com/mikeanth-dvlp/pifetch/blob/master/assets/example.png)
 
 ## Prerequisites
 For this piece of code to work, you need to have `docker`, `lshw` and `vcgencmd` available on your Raspberry Pi.
