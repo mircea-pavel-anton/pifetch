@@ -35,3 +35,13 @@ alias pifetch='/usr/local/src/pifetch/pifetch'
 ```
 5. Load the new `.bash_aliases` file via `source ~/.bashrc`
 6. You're done. There's nothing more to do.
+
+<br>
+
+## Feedback, suggestions and help
+
+For feedback, suggestions, bug reports etc., feel free to e-mail me at 'mike.anth99@gmail.com'.
+
+---
+
+_a project by Mircea-Pavel Anton (Mike Anthony)_
