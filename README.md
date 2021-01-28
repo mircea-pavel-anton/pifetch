@@ -63,7 +63,7 @@ In your playbook/role, you can simply add the following task, and Ansible will t
 ...
 ```
 
-> Note: The arch in the release name matches the ansible {{ ansible_architecture }} for all supported architectures.
+> Note: The arch in the release name matches the ansible `{{ ansible_architecture }}` for all supported architectures.
 
 ### Build from source
 
