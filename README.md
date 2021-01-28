@@ -37,11 +37,33 @@ As for `vcgencmd`, it comes preinstalled in Raspbian, so I suggest you use that.
 
 ### Download the precompiled binaries
 
+Make sure to download the right binary for your architecture. On the releases page, there are precompiled binaries for either `x86_64`, which would be your typical 64bit desktop, `aarch64`, which would be a 64bit OS running on an ARM architecture, such as the Pi4 running Ubuntu Server 64bit, and `armv6l` which would be a 32bit OS running on an ARM architecture, such as the Pi0 running Raspbian.
+
 ``` bash
-wget https://github.com/mikeanth-dev/pifetch/releases/download/v1.0.0/pifetch
-chmod +x ./pifetch;                 # make the file executable
-sudo mv ./pifetch /bin/pifetch;     # add it to path
+wget https://github.com/mikeanth-dev/pifetch/releases/download/v1.0.0/pifetch-aarch64
+chmod +x ./pifetch-aarch64;                 # make the file executable
+sudo mv ./pifetch-aarch64 /bin/pifetch;     # add it to path
 ```
+
+### Automated install via Ansible
+
+You can use an automation tool, like Ansible to script out this installation.   
+In your playbook/role, you can simply add the following task, and Ansible will take care of it for you!
+
+``` yaml
+...
+- name: Download pifetch v1.0.0
+  become: true
+  get_url:
+    url: 'https://github.com/mikeanth-dev/pifetch/releases/download/v1.0.0/pifetch-{{ ansible_architecture }}'
+    dest: '/bin/pifetch'
+    mode: '0755'
+    owner: root
+    group: root
+...
+```
+
+> Note: The arch in the release name matches the ansible {{ ansible_architecture }} for all supported architectures.
 
 ### Build from source
 
