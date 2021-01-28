@@ -15,9 +15,8 @@ Example:
 
 For this piece of code to work, you need to have `docker`, `lshw` and `vcgencmd` available on your Raspberry Pi.
 
-For `docker`, you can follow [this guide](https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl).  
-For `lshw`, a basic `apt-get install` is sufficient: `sudo apt-get install lshw`.  
-As for `vcgencmd`, it comes preinstalled in Raspbian, so I suggest you use that. For other distros, you have to look it up yourself.  
+To get `docker` up and running you can follow one of the million guides online, such as [this one](https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl).  
+As for the other 2, you can use `apt` to install `lshw`, just like that: `sudo apt-get install lshw`, and `vcgencmd` comes installed by default on Raspbian and Ubuntu 20.10, so that shouldn't be a problem.
 
 ## How to install
 
