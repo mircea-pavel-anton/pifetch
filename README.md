@@ -15,23 +15,9 @@ Example:
 
 For this piece of code to work, you need to have `docker`, `lshw` and `vcgencmd` available on your Raspberry Pi.
 
-For `docker`, you can follow [this guide](https://phoenixnap.com/kb/docker-on-raspberry-pi).
-However, with the volatility of the interwebs, I'll provide a short summary here.
-
-``` bash
-curl -fsSL https://get.docker.com -o get-docker.sh  # download the official install script
-sudo sh get-docker.sh                               # run it
-sudo usermod -aG docker $(whoami)                   # add the current user to the docker group
-exit                                                # you need to log out and log back in for the change to take effect
-
-# log back in
-
-docker version                                      # to test the installation
-```
-
-For `lshw`, a basic `apt-get install` is sufficient: `sudo apt-get install lshw`
-
-As for `vcgencmd`, it comes preinstalled in Raspbian, so I suggest you use that. For other distros, you have to look it up yourself.
+For `docker`, you can follow [this guide](https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl).  
+For `lshw`, a basic `apt-get install` is sufficient: `sudo apt-get install lshw`.  
+As for `vcgencmd`, it comes preinstalled in Raspbian, so I suggest you use that. For other distros, you have to look it up yourself.  
 
 ## How to install
 
