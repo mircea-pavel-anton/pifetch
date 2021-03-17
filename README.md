@@ -1,4 +1,3 @@
-
 ![GitHub](https://img.shields.io/github/license/mikeanth-dev/pifetch?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mikeanth-dev/pifetch?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/mikeanth-dev/pifetch?style=for-the-badge)
@@ -9,7 +8,7 @@ A custom fetch script to dsiplay some Raspberry related information and Docker s
 
 Example:
 
-![Awesome Example Image](https://github.com/mikeanth-dvlp/pifetch/blob/master/assets/example.png)
+![Awesome Example Image](assets/example.png)
 
 ## How to set up
 
