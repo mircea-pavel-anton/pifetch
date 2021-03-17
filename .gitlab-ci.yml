@@ -15,9 +15,9 @@ build:
       #     - "*.o"
 
 # run tests using the binary built before
-test:
-  stage: test
-  before_script:
-    - apt update && apt -y install lshw docker.io
-  script:
-    - ./pifetch
+# test:
+#   stage: test
+#   before_script:
+#     - apt update && apt -y install lshw docker.io
+#   script:
+#     - ./pifetch
