@@ -1,8 +1,9 @@
+# Pifetch
+
 ![GitHub](https://img.shields.io/github/license/mikeanth-dev/pifetch?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mikeanth-dev/pifetch?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/mikeanth-dev/pifetch?style=for-the-badge)
-
-# Pifetch
+![Build status](https://img.shields.io/gitlab/pipeline/mikeanth-dev/pifetch/master?style=for-the-badge)
 
 A custom fetch script to dsiplay some Raspberry related information and Docker stats
 
