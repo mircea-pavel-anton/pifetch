@@ -7,23 +7,6 @@ on:
       - published
 
 jobs:
-  build-on-amd64:
-    runs-on: ubuntu-20.04
-    name: Build release binary on amd64
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Build
-      run: |
-        make build
-        cp pifetch pifetch-ubuntu2004_amd64
-    - name: Add compiled binary to release
-      uses: AButler/upload-release-assets@v2.0
-      with:
-        files: 'pifetch-ubuntu2004_amd64'
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-
   build-on-other:
     runs-on: ubuntu-18.04
     name: Build release binary on ${{ matrix.arch }} ${{ matrix.distro }}
@@ -36,10 +19,6 @@ jobs:
           - arch: armv7
             distro: alpine_latest
           - arch: aarch64
-            distro: alpine_latest
-          - arch: s390x
-            distro: alpine_latest
-          - arch: ppc64le
             distro: alpine_latest
 
     steps:
